@@ -138,7 +138,7 @@ router.get('/getClass', function (req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*')
   axios.get("https://c.open.163.com/mob/home/list.do?cursor=0&pagesize=10&callback=jsonp1", {
     headers: {
-      host: "3g.163.com",
+      host: "c.open.163.com",
       referer: "http://3g.163.com/touch/open?dataversion=A&uversion=A&version=v_standard"
     }
   }).then(function (data) {
