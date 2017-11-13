@@ -136,10 +136,10 @@ router.get('/getPlace', function (req, res) {
 //公开课
 router.get('/getClass', function (req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*')
-  axios.get("https://c.open.163.com/mob/home/list.do?cursor=0&pagesize=10&callback=jsonp1", {
+  axios.get("https://c.open.163.com/mob/classify/playlist.do?id=5&type=5&cursor=0&pagesize=10&callback=_jsonprgz9hw8psx", {
     headers: {
       host: "c.open.163.com",
-      referer: "http://3g.163.com/touch/open?dataversion=A&uversion=A&version=v_standard"
+      referer: "https://m.open.163.com/category/speech"
     }
   }).then(function (data) {
     console.log(data);
